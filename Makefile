@@ -62,7 +62,7 @@ OBJ = $(OBJS)
 endif
 
 $(NAME): $(OBJ) $(HEADR)
-	ar rcs $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJ)
 
 bonus:
 	@make IS_BONUS=1 all
