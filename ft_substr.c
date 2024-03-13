@@ -6,7 +6,7 @@
 /*   By: jheo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 13:38:56 by jheo              #+#    #+#             */
-/*   Updated: 2024/03/13 15:24:54 by jheo             ###   ########.fr       */
+/*   Updated: 2024/03/13 16:59:57 by jheo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -26,6 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	arr = (char *)malloc(sizeof(char) * (len + 1));
 	if (arr == 0)
 		return (0);
+	len += start;
 	while (num < len && s[start + num] != 0 && start < len)
 	{
 		arr[num] = s[start + num];
